@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body,
+a {
+	background-color: #f8f8f8;
+	color: #5d5d5d;
+	font-family: "arial, helvetica, sans-serif", "microsoft yahei", simsun;
+}
+
+.wrap {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid #fefefe;
+	background-color: #fefefe;
+}
+
+nav {
+	width: 80%;
+	height: 40px;
+	background-color: #666;
+	position: fixed;
+	top: 0;
+}
+
+.home {
+	line-height: 40px;
+	margin-left: 40px;
+}
+
+.home a {
+	color: #fff;
+	background-color: #666666;
+}
+
+.main {
+	width: 80%;
+	margin: 60px auto;
+	background-color: #ffffff;
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 6px;
+}
+
+small{
+	color: red;
+}
+.qq{
+	text-align: center;
+	margin: 20px;
+}
+
+#qqzone{
+	margin: 20px;
+}
+#qqzone a{
+	color: dodgerblue;
+}
+
+
+
+
+

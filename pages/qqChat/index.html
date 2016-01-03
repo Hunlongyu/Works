@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>QQ强制聊天程序</title>
+		<link rel="stylesheet" href="qqChat.css" />
+	</head>
+
+	<body>
+
+		<div class="wrap">
+			<nav>
+				<div class="home">
+					<a href="../../index.html">&hearts;&nbsp;首页</a>
+				</div>
+			</nav>
+			<div class="main">
+				<h2>QQ强制聊天程序</h2>
+				<p>当你在QQ上添加好友遭到拒绝时，使用该程序可以自由地同任何在线的QQ用户聊天。是交友必不可少的一个工具！</p>
+				<small>注：使用该软件前，请确认您的电脑已经运行了QQ。</small>
+				<div class="qq">
+					<span>请输入QQ号码：</span>
+					<input type="number" id="textqq" placeholder="请输入数字..." />
+					<button onclick="chat();">开始聊天</button>
+					<button onclick="openwin();">访问空间</button>
+					<div id="qqzone"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--聊天程序-->
+		<script language="JavaScript">
+			function chat() {
+				var txtvalue = document.getElementById('textqq').value;
+				window.open("tencent://message/?uin=" + txtvalue)
+			}
+		</script>
+
+		<!--访问空间程序-->
+		<script language="javascript">
+			function openwin() {
+				document.getElementById("qqzone").innerHTML = "<span><a href='http://" + document.getElementById("textqq").value + ".qzone.qq.com/' target='_blank'><h3>点击这儿访问QQ空间： http://" + document.getElementById("textqq").value + ".qzone.qq.com/</h3></a></span>"
+			}
+		</script>
+
+	</body>
+
+</html>
